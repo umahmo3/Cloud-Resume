@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Resume</title>
+<link rel="stylesheet" href="style.css">
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+  const dateDiv = document.getElementById('current-date');
+  dateDiv.textContent = new Date().toLocaleDateString();
+  console.log('Resume page loaded');
+});
+</script>
+</head>
+<body>
+<header>
+  <h1>Jane Doe</h1>
+  <nav>
+    <ul>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="cover-letter.html">Cover Letter</a></li>
+      <li><a href="career-goals.html">Career Goals</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section>
+    <h2>Professional Experience</h2>
+    <p>I have worked in the <span class="highlight">technology industry</span> for over five years.<br>
+    During this time, I have honed my problem-solving skills.</p>
+    <hr>
+    <ol>
+      <li>Software Developer at ABC Corp</li>
+      <li>Systems Analyst at XYZ Inc</li>
+    </ol>
+  </section>
+  <article>
+    <h3>Education</h3>
+    <p><strong>Bachelor of Science</strong> in <em>Computer Science</em>, 2018</p>
+    <table>
+      <caption>Course Highlights</caption>
+      <tr><th>Course</th><th>Year</th><th>Grade</th><th>Notes</th></tr>
+      <tr><td>Algorithms</td><td>2016</td><td>A</td><td>Core subject</td></tr>
+      <tr><td>Databases</td><td>2017</td><td>A</td><td>Practical project</td></tr>
+    </table>
+    <div id="current-date"></div>
+  </article>
+</main>
+<footer>
+  &copy; 2024 Jane Doe
+</footer>
+</body>
+</html>
