@@ -1,53 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Resume</title>
-<link rel="stylesheet" href="style.css">
-<script>
-window.addEventListener('DOMContentLoaded', () => {
-  const dateDiv = document.getElementById('current-date');
-  dateDiv.textContent = new Date().toLocaleDateString();
-  console.log('Resume page loaded');
-});
-</script>
-</head>
-<body>
-<header>
-  <h1>Jane Doe</h1>
-  <nav>
-    <ul>
-      <li><a href="resume.html">Resume</a></li>
-      <li><a href="cover-letter.html">Cover Letter</a></li>
-      <li><a href="career-goals.html">Career Goals</a></li>
-    </ul>
-  </nav>
-</header>
-<main>
-  <section>
-    <h2>Professional Experience</h2>
-    <p>I have worked in the <span class="highlight">technology industry</span> for over five years.<br>
-    During this time, I have honed my problem-solving skills.</p>
-    <hr>
-    <ol>
-      <li>Software Developer at ABC Corp</li>
-      <li>Systems Analyst at XYZ Inc</li>
-    </ol>
-  </section>
-  <article>
-    <h3>Education</h3>
-    <p><strong>Bachelor of Science</strong> in <em>Computer Science</em>, 2018</p>
-    <table>
-      <caption>Course Highlights</caption>
-      <tr><th>Course</th><th>Year</th><th>Grade</th><th>Notes</th></tr>
-      <tr><td>Algorithms</td><td>2016</td><td>A</td><td>Core subject</td></tr>
-      <tr><td>Databases</td><td>2017</td><td>A</td><td>Practical project</td></tr>
-    </table>
-    <div id="current-date"></div>
-  </article>
-</main>
-<footer>
-  &copy; 2024 Jane Doe
-</footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Umer Mahmood | Résumé</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Umer Mahmood</h1>
+      <span class="tagline">Cloud & Infrastructure Consultant</span>
+
+      <nav>
+        <ul>
+          <li><a href="resume.html">Résumé</a></li>
+          <li><a href="cover-letter.html">Cover Letter</a></li>
+          <li><a href="career-goals.html">Career Goals</a></li>
+        </ul>
+      </nav>
+      <hr />
+    </header>
+
+    <main>
+      <section id="summary">
+        <h2>Professional&nbsp;Summary</h2>
+        <p>
+          <strong>Results‑driven consultant</strong> with <em>10 + years</em> of experience
+          architecting secure, high‑availability solutions on <mark>AWS Outposts,
+          Nutanix AHV, and VMware</mark>. Proven track record leading cross‑functional
+          teams through data‑center migration, ATO compliance, and PI planning.
+        </p>
+      </section>
+
+      <section id="experience">
+        <h2>Selected&nbsp;Experience</h2>
+
+        <article>
+          <h3>
+            Senior Cloud Consultant – IT Consulting Firm
+            <span class="date">Jul 2023 – Present</span>
+          </h3>
+          <ul>
+            <li>
+              Led the <strong>migration of 120 VMs</strong> from VMware vSphere to
+              Nutanix AHV, cutting recurring infrastructure cost by 27 %.
+            </li>
+            <li>
+              Designed new <em>Outpost VPC network</em> and ADFS integration enabling
+              zero‑trust access for 400 + users.
+            </li>
+            <li>
+              Served as Product Owner for the CLDC team, driving two Program
+              Increment cycles and achieving &gt;95 % feature delivery.
+            </li>
+          </ul>
+        </article>
+
+        <!-- ‑‑ ADD additional <article> blocks as needed ‑‑ -->
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <p>
+          <strong>Western Governors University</strong><br />
+          B.S. Cloud Computing (In Progress, Student ID 001224010)
+        </p>
+      </section>
+
+      <section id="certifications">
+        <h2>Certifications</h2>
+
+        <table>
+          <caption>
+            Industry Credentials
+          </caption>
+          <thead>
+            <tr>
+              <th>Certificate</th>
+              <th>Issuer</th>
+              <th>Award Year</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>AWS Certified Cloud Practitioner</td>
+              <td>Amazon Web Services</td>
+              <td>2025</td>
+              <td><strong>Active</strong></td>
+            </tr>
+            <tr>
+              <td>CompTIA Security+ ce</td>
+              <td>CompTIA</td>
+              <td>2024</td>
+              <td>Active</td>
+            </tr>
+            <tr>
+              <td>CompTIA CySA+ ce</td>
+              <td>CompTIA</td>
+              <td>2023</td>
+              <td>Active</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="skills">
+        <h2>Key&nbsp;Skills</h2>
+        <ul>
+          <li>Cloud architecture (AWS Outposts, VPC, IAM)</li>
+          <li>Nutanix AHV & Prism</li>
+          <li>Infrastructure as Code (Terraform, CloudFormation)</li>
+          <li>DevOps & CI/CD pipelines (GitHub Actions)</li>
+          <li>Security & Compliance (RMF, NIST 800‑53)</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <hr />
+      <span>&copy; <span id="year"></span> Umer Mahmood</span><br />
+      <div id="current-date"></div>
+    </footer>
+
+    <script>
+      /* Populate the footer */
+      document.getElementById("year").textContent = new Date().getFullYear();
+      document.getElementById("current-date").textContent =
+        "Document generated on " + new Date().toLocaleDateString();
+
+      /* Console diagnostic */
+      console.log("Résumé loaded correctly – " + new Date().toLocaleTimeString());
+    </script>
+  </body>
 </html>

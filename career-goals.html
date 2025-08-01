@@ -1,78 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Career Goals</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header>
-  <h1>Umer Mahmood - Career Goals</h1>
-  <nav>
-    <ul>
-      <li><a href="resume.html">Resume</a></li>
-      <li><a href="cover-letter.html">Cover Letter</a></li>
-      <li><a href="career-goals.html">Career Goals</a></li>
-    </ul>
-  </nav>
-</header>
-<main>
-  <section>
-    <h2>Goals Overview</h2>
-    <p>Over the next few years I plan to complete my <strong>B.S. in Cloud Computing</strong> and expand my leadership of automation and security initiatives in large enterprise environments.</p>
-    <p>My long-term objective is to become a cloud architect, mentoring teams in virtualization and compliance best practices.</p>
-    <img src="sample.png" alt="Sample" width="100" height="100">
-    <audio controls src="sample.mp3"></audio>
-    <video controls width="320" height="240" src="sample.mp4"></video>
-  </section>
-  <section>
-    <h2>Contact Me</h2>
-    <form action="https://wp.zybooks.com/form-viewer.php" method="post">
-      <div>
-        <label for="fname">First Name:</label>
-        <input type="text" id="fname" name="fname" required>
-      </div>
-      <div>
-        <label for="lname">Last Name:</label>
-        <input type="text" id="lname" name="lname" required>
-      </div>
-      <div>
-        <label for="company">Company Name:</label>
-        <input type="text" id="company" name="company">
-      </div>
-      <div>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-      </div>
-      <div>
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone">
-      </div>
-      <div>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message"></textarea>
-      </div>
-      <div>Best contact time:<br>
-        <label><input type="radio" name="time" value="am"> a.m.</label>
-        <label><input type="radio" name="time" value="pm"> p.m.</label>
-        <label><input type="radio" name="time" value="anytime" checked> anytime</label>
-      </div>
-      <div>
-        <label for="contact">Preferred contact method:</label>
-        <select id="contact" name="contact">
-          <option value="phone">phone</option>
-          <option value="email">email</option>
-          <option value="text">text</option>
-        </select>
-      </div>
-      <div>
-        <button type="submit">Send</button>
-      </div>
-    </form>
-  </section>
-</main>
-<footer>
-  &copy; 2025 Umer Mahmood
-</footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Career Goals – Umer Mahmood</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>My Five‑Year Career Goals</h1>
+
+      <nav>
+        <ul>
+          <li><a href="resume.html">Résumé</a></li>
+          <li><a href="cover-letter.html">Cover Letter</a></li>
+          <li><a href="career-goals.html">Career Goals</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <figure>
+        <img src="media/headshot.jpg" alt="Umer Mahmood headshot" width="200" />
+        <figcaption>Continuous learning is my guiding principle.</figcaption>
+      </figure>
+
+      <section>
+        <h2>Listen to My Elevator Pitch&nbsp;<span aria-label="audio icon">🔊</span></h2>
+        <audio controls>
+          <source src="media/intro.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </section>
+
+      <section>
+        <h2>See a Recent Project Demo&nbsp;<span aria-label="video icon">🎬</span></h2>
+        <video controls width="480">
+          <source src="media/demo.mp4" type="video/mp4" />
+          Sorry—your browser can't play this video.
+        </video>
+      </section>
+
+      <section>
+        <h2>Contact Me</h2>
+        <form action="https://wp.zybooks.com/form-viewer.php" method="post">
+          <label>First Name:
+            <input name="firstName" required />
+          </label>
+
+          <label>Last Name:
+            <input name="lastName" required />
+          </label>
+
+          <label>Company:
+            <input name="company" />
+          </label>
+
+          <label>Email:
+            <input type="email" name="email" required />
+          </label>
+
+          <label>Phone:
+            <input type="tel" name="phone" />
+          </label>
+
+          <label>Best contact time:</label>
+          <label><input type="radio" name="contactTime" value="am" /> a.m.</label>
+          <label><input type="radio" name="contactTime" value="pm" /> p.m.</label>
+          <label><input type="radio" name="contactTime" value="any" checked /> anytime</label>
+
+          <label>Preferred contact method:
+            <select name="contactMethod">
+              <option value="phone">phone</option>
+              <option value="email">email</option>
+              <option value="text">text</option>
+            </select>
+          </label>
+
+          <label>Message:
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer><hr />&copy; Umer Mahmood</footer>
+  </body>
 </html>
